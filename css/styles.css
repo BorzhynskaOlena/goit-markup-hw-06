@@ -697,7 +697,7 @@ margin-right: 8px;
 display: flex;
 align-items: center;
 justify-content: center;
-transition: background-color var(--time-duration) var(--time-function), border-color var(--time-duration) var(--time-function);  
+transition: border-color var(--time-duration) var(--time-function);  
 }
 .check-icon {
   fill: transparent;
@@ -705,10 +705,13 @@ transition: background-color var(--time-duration) var(--time-function), border-c
 }
 .modal-check:checked + .label-check span {
 background-color: var(--accent-color);
-border-color: var(--accent-color);
+border-color: none;
 }
 .modal-check:checked + .label-check .check-icon {
   fill: var(--minor-text-color);
+}
+.modal-check:focus + .label-check span {
+border-color: var(--accent-color)
 }
 .modal-form-btn {
   font-family: inherit;
