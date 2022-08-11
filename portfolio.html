@@ -65,7 +65,7 @@
     <main>
       <section class="section">
         <div class="container">
-          <h1 class="portfolio-title">Портфоліо</h1>
+          <h1 class="portfolio-title visually-hidden">Портфоліо</h1>
           <ul class="portfolio-btn-list list">
             <li class="portfolio-btn-item">
               <button type="button" class="portfolio-btn current-portfolio-btn">
@@ -361,6 +361,25 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div class="sign-box">
+          <p class="sign-text">Підпишіться на розсилку</p>
+          <form class="sign-form">
+            <input
+              type="text"
+              name="sign"
+              placeholder="E-mail"
+              class="sign-input"
+            />
+            <button type="submit" class="sign-btn">
+              Підписатися
+              <span
+                ><svg class="icon-sign" width="24" height="24">
+                  <use href="./images/sprite.svg#icon-send"></use>
+                </svg>
+              </span>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
