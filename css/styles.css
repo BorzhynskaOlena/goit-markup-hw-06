@@ -494,7 +494,7 @@ align-items: baseline;
 }
 /* ------------------підпишись----------------- */
 .sign-box {
-  margin-left: 93px;
+  margin-left: auto;
 }
 .sign-form {
   display: flex;
